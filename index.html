@@ -52,25 +52,27 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 
 
 #contact {
-	font-weight: 100;
-	text-align: left;
-	color: beige;
 	background-image: url('photos/bio.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: fit-content;
 	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
-	width: 100%;
+	min-width: 100%;
 	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 0px;
-	padding-top: 42px;
-	padding-bottom: 130px;
+	display: inherit;
+	align-items: flex-start;
+	justify-content: flex-start;
+	height: min-content;
+	position:  initial; /* Necessário para posicionar o overlay */
+	color: beige;
+	position: relative; /* Necessário para posicionar o overlay */
+	/* Adiciona um overlay translúcido */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	margin: -30px 0 0;
+	padding-left: 50px;
 }
+
 
 .fa {
 	text-align: center;
