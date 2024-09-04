@@ -14,8 +14,16 @@
 
 <style>
 /* Correções gerais */
+
+html, body {
+	overflow-x: hidden;
+}
+
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
+body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
+
+
+}
 
 /* Estilo da Navbar */
 .w3-top .w3-bar {
@@ -191,6 +199,8 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	padding-bottom: 20px;
 }
 
+
+
 @media (max-width: 220px) {
 	h2 {
 		box-sizing: border-box;
@@ -206,6 +216,13 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 
 
 }
+
+@media (max-width: 600px) {
+	.social, .video, .titulo {
+		background-attachment: scroll; /* Troque de fixed para scroll em telas menores */
+	}
+}
+
 
 @media (max-width: 600px) {
 
@@ -229,14 +246,14 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 @media (max-width: 932px) {
 #bio {
 	flex-direction: column; /* Aplica column em dispositivos móveis */
-	max-width: fit-content;
+	max-width: 100%;
 	box-sizing: border-box;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
 	text-align: start;
 	margin: 0px;
-	padding: 5px 0px;
+	padding: 0px 0px;
 }
 .nav {
 	display: flex;               /* Utiliza flexbox para facilitar o alinhamento */
