@@ -117,8 +117,8 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	font-size: 15pt;
 	width: 100%;
 	align-items: center;
-	justify-content: space-between;
-	padding: 0px 130px;
+	justify-content: space-around;
+	padding: 0px 300px;
 	padding-bottom: 50px;
 	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
 }
@@ -191,7 +191,42 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	padding-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 220px) {
+	h2 {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		font-size: 14pt !important;
+		align-items: center;
+		justify-content: space-around !important;
+	}
+
+
+
+}
+
+@media (max-width: 600px) {
+
+	.nav {
+		display: flex;               /* Utiliza flexbox para facilitar o alinhamento */
+		justify-content: flex-start;  /* Alinha o ícone à esquerda */
+		align-items: left;          /* Alinha verticalmente ao centro */
+		width: auto;                  /* Garante que o contêiner ocupe toda a largura */
+		padding: 0;                   /* Remove qualquer padding interno */
+		margin: 0;                    /* Remove margens externas */
+		box-sizing: border-box;       /* Garante que largura leve em conta bordas e padding */
+	}
+
+	.nav i {
+		font-size: 24px;              /* Ajuste o tamanho do ícone */
+		margin-left: 0;               /* Garante que o ícone não tenha margem à esquerda */
+	}
+
+}
+
+@media (max-width: 932px) {
 #bio {
 	flex-direction: column; /* Aplica column em dispositivos móveis */
 	max-width: fit-content;
@@ -203,8 +238,53 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	margin: 0px;
 	padding: 5px 0px;
 }
+.nav {
+	display: flex;               /* Utiliza flexbox para facilitar o alinhamento */
+	justify-content: flex-start;  /* Alinha o ícone à esquerda */
+	align-items: center;          /* Alinha verticalmente ao centro */
+	width: 100%;                  /* Garante que o contêiner ocupe toda a largura */
+	padding: 0;                   /* Remove qualquer padding interno */
+	margin: 0;                    /* Remove margens externas */
+	box-sizing: border-box;       /* Garante que largura leve em conta bordas e padding */
+}
 
+.nav i {
+	font-size: 24px;              /* Ajuste o tamanho do ícone */
+	margin-left: 0;               /* Garante que o ícone não tenha margem à esquerda */
+}
 
+.titulo {
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.social {
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
+	color: rgba(255, 254, 254, 0.831);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	font-size: 15pt;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 0px;
+	padding-bottom: 50px;
+	flex-wrap: wrap; /* Permite a quebra dos itens para uma nova linha */
+
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+}
 
 }
 
@@ -214,7 +294,6 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 .bio-eng {
 	max-width: 50%;
 }
-
 
 
 </style>
