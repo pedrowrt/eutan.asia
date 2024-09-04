@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script src="https://kit.fontawesome.com/b133f872bd.js" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -50,9 +52,24 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 
 
 #contact {
-	color: rgb(212, 212, 212);
 	font-weight: 100;
 	text-align: left;
+	color: beige;
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: fit-content;
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0px;
+	padding-top: 42px;
+	padding-bottom: 130px;
 }
 
 .fa {
@@ -69,12 +86,14 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: fit-content;
-	background-color: rgba(0, 0, 0, 0.5); /* Overlay preto com 50% de opacidade */	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */	width: 100%;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-top: 40px;
+	padding-top: 42px;
+	padding-bottom: 10px;
 	background-image: url('photos/bio.png');
 	background-size: cover;
 	background-position: center;
@@ -82,13 +101,35 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	background-attachment: fixed;
 }
 
+.social {
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
+	color: rgba(255, 254, 254, 0.831);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	font-size: 15pt;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 130px;
+	padding-bottom: 50px;
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+}
+
+
+
 .video {
 	background-image: url('photos/bio.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-color: rgba(0, 0, 0, 0.5); /* Overlay preto com 50% de opacidade */
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
 	width: 100%;
 	box-sizing: border-box;
 	display: flex;
@@ -100,13 +141,13 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	position: relative; /* Necessário para posicionar o overlay */
 	/* Adiciona um overlay translúcido */
 	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
-	padding-top: 150px;
+	padding-top: 0px;
 }
 
 /* Bio Section */
 #bio {
 	font-size: 12pt;
-	text-shadow: 1px 2px 1px rgba(8, 8, 8, 0.561), 3px 2px 2px rgba(0, 0, 0, 0.645), 1px 2px 3px rgba(0, 0, 0, 0.654);
+	text-shadow: 1px 2px 1px rgba(8, 8, 8, 0.6), 3px 2px 2px rgba(0, 0, 0, 0.645), 1px 2px 3px rgba(0, 0, 0, 0.654);
 }
 
 .bio-eng {
@@ -128,6 +169,8 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	margin: 0px 0px 0px 0px;
 }
 
+
+
 /* Imagem de fundo translúcida para a bio */
 #bio {
 	background-image: url('photos/bio.png');
@@ -135,7 +178,7 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-color: rgba(0, 0, 0, 0.5); /* Overlay preto com 50% de opacidade */
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
 	color: #fff;
 	box-sizing: border-box;
 	display: flex;
@@ -149,7 +192,7 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 @media (max-width: 768px) {
 #bio {
 	flex-direction: column; /* Aplica column em dispositivos móveis */
-	max-width: 100%;
+	max-width: fit-content;
 	box-sizing: border-box;
 	display: flex;
 	align-items: flex-start;
@@ -199,9 +242,76 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	<h2 class="w3-wide">EUTANÁSIA</h2>
 </div>
 
-<div class="w3-center video" style="max-width:100%">
-	<h2 class="w3-wide"><iframe width="560" height="315" src="https://www.youtube.com/embed/x-UMO1gdbF0?si=uB8T_CWf885EwXYX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></h2>
+<div class="w3-center social">
+		<a href="mailto:pedrowrt@gmail.com"><i class="fa fa-envelope" style="width:30px"></i></a><br>
+
+		<a href="https://www.instagram.com/___eutanasia" target="_blank"><i class="fa fa-instagram" style="width:30px"></i></a><br>
+
+		<a href="https://www.youtube.com/@eu_tanasia" target="_blank"><i class="fa fa-youtube" style="width:30px"></i></a><br>
+
+		<a href="https://tinyurl.com/2p92rvjf" target="_blank"><i class="fa fa-spotify" style="width:30px"></i></a><br>
+
+		<a href="https://music.apple.com/br/artist/eutanásia/1591488490" target="_blank"><i class="fa fa-apple" style="width:30px"></i></a><br>
+
+		<a href="https://soundcloud.com/eu_tanasia" target="_blank"><i class="fa fa-soundcloud" style="width:30px"></i></a><br>
+
+		<a href="https://tinyurl.com/3dazzsuv" target="_blank"><i class="fa fa-bandcamp" style="width:30px"></i></a><br>
+
+		<a href="https://www.tiktok.com/@_eutanasia" target="_blank"><i class="fa fa-tiktok" style="width:30px"></i></a><br>
+
+		<a href="https://tidal.com/browse/artist/23711055" target="_blank"><i class="fa fa-t" style="width:30px"></i> </a><br>
+
+		<a href="https://www.deezer.com/br/artist/668138" target="_blank"><i class="fa fa-deezer" style="width:30px"></i></a><br>
 </div>
+
+<!-- Music Section -->
+<section id="music">
+	<div class="w3-row">
+	  <div class="w3-quarter">
+		<a href="https://www.youtube.com/watch?v=x-UMO1gdbF0" target="_blank">
+		<img src="./photos/cilada.jpg" style="width:100%" onclick="onClick(this)" alt="Cilada"></a>
+		<a href="https://www.youtube.com/watch?v=u4LlA3DechI" target="_blank">
+		<img src="./photos/moet.jpg" style="width:100%" onclick="onClick(this)" alt="Meus Olhos eu Tapo feat. DiU">
+		</a>
+	  </div>
+
+	  <div class="w3-quarter">
+
+		<a href="https://www.youtube.com/watch?v=oLupLMSdX94" target="_blank">
+		<img src="./photos/teter.jpg" style="width:100%" onclick="onClick(this)" alt="TE TER"></a>
+
+		<a href="https://www.youtube.com/watch?v=ZZNryRkuPEw" target="_blank">
+		<img src="./photos/fdm.jpg" style="width:100%" onclick="onClick(this)" alt="Filho do Medo"></a>
+
+	  </div>
+
+	  <div class="w3-quarter">
+
+		<a href="https://www.youtube.com/watch?v=5I6Mmp7L87A" target="_blank">
+			<img src="./photos/outside.jpg" style="width:100%" onclick="onClick(this)" alt="Outside feat. Snowfuks">
+		</a>
+
+		<a href="https://www.youtube.com/watch?v=j8XRFQ-WrdM" target="_blank">
+			<img src="./photos/citadel.png" style="width:100%" onclick="onClick(this)" alt="Citadel w/ Two Internet Ghosts">
+		</a>
+	  </div>
+
+	  <div class="w3-quarter">
+
+		<a href="https://www.youtube.com/watch?v=1ILjV4E8jjg" target="_blank">
+			<img src="./photos/tantofaz.jpg" style="width:100%" onclick="onClick(this)" alt="Tanto Faz">
+		</a>
+
+		<a href="https://www.youtube.com/watch?v=IoCEPvhQAiw" target="_blank">
+			<img src="./photos/muitos.png" style="width:100%" onclick="onClick(this)" alt="Muitos w/ maisnerd">
+		</a>
+	  </div>
+	</div>
+</section>
+
+
+
+
 
 
 
@@ -215,30 +325,12 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	</p>
 </div>
 
-<!-- Music Section -->
-<section id="music">
-	<div class="w3-row w3-grayscale-min">
-	  <div class="w3-quarter">
-		<img src="./photos/cilada.jpg" style="width:100%" onclick="onClick(this)" alt="Cilada - Single">
-		<img src="./photos/moet.jpg" style="width:100%" onclick="onClick(this)" alt="Meus Olhos Eu Tapo (feat. DIU) - Single">
-	  </div>
+<!-- Video -->
 
-	  <div class="w3-quarter">
-		<img src="./photos/teter.jpg" style="width:100%" onclick="onClick(this)" alt="TE TER - Single">
-		<img src="./photos/fdm.jpg" style="width:100%" onclick="onClick(this)" alt="Filho do Medo - Single">
-	  </div>
+<div class="w3-center video" style="max-width:100%">
+	<h2 class="w3-wide"><iframe width="560" height="315" src="https://www.youtube.com/embed/x-UMO1gdbF0?si=uB8T_CWf885EwXYX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></h2>
+</div>
 
-	  <div class="w3-quarter">
-		<img src="./photos/outside.jpg" style="width:100%" onclick="onClick(this)" alt="Outside (feat. Snowfuks) - Single">
-		<img src="./photos/citadel.png" style="width:100%" onclick="onClick(this)" alt="Citadel (w/ Two Internet Ghosts)">
-	  </div>
-
-	  <div class="w3-quarter">
-		<img src="./photos/tantofaz.jpg" style="width:100%" onclick="onClick(this)" alt="Tanto Faz - Single">
-		<img src="./photos/muitos.png" style="width:100%" onclick="onClick(this)" alt="Muitos w/ maisnerd">
-	  </div>
-	</div>
-</section>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -254,12 +346,33 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif}
 	<div class="w3-row w3-padding-32">
 	  <div class="w3-col m6 w3-large w3-margin-bottom">
 		<i class="fa fa-envelope" style="width:30px"></i> Email: <a href="mailto:pedrowrt@gmail.com">pedrowrt@gmail.com</a><br>
-		<i class="fa fa-instagram" style="width:30px"></i> Instagram: <a href="https://www.instagram.com/__eutanasia/" target="_blank">@__eutanasia</a><br>
+		<i class="fa fa-instagram" style="width:30px"></i> Instagram: <a href="https://www.instagram.com/___eutanasia" target="_blank">@___eutanasia</a><br>
+		<i class="fa fa-youtube" style="width:30px"></i> YouTube: <a href="https://www.youtube.com/@eu_tanasia" target="_blank">Assista no YouTube</a><br>
 		<i class="fa fa-spotify" style="width:30px"></i> Spotify: <a href="https://tinyurl.com/2p92rvjf" target="_blank">Ouça no Spotify</a><br>
-		<i class="fa fa-apple" style="width:30px"></i> Apple Music: <a href="https://tinyurl.com/53patb92" target="_blank">Ouça no Apple Music</a><br>
-		<i class="fa fa-bandcamp" style="width:30px"></i> Bandcamp: <a href="https://tinyurl.com/3dazzsuv" target="_blank">Ouça no Bandcamp</a><br>
+		<i class="fa fa-apple" style="width:30px"></i> Apple Music: <a href="https://music.apple.com/br/artist/eutanásia/1591488490" target="_blank">Ouça no Apple Music</a><br>
 		<i class="fa fa-soundcloud" style="width:30px"></i> Soundcloud: <a href="https://soundcloud.com/eu_tanasia" target="_blank">Ouça no Soundcloud</a><br>
+		<i class="fa fa-bandcamp" style="width:30px"></i> Bandcamp: <a href="https://tinyurl.com/3dazzsuv" target="_blank">Ouça no Bandcamp</a><br>
+		<i class="fa fa-tiktok" style="width:30px"></i>TikTok: <a href="https://www.tiktok.com/@_eutanasia" target="_blank">Siga no Tik  Tok</a><br>
+		<i class="fa fa-t" style="width:30px"></i> Tidal: <a href="https://tidal.com/browse/artist/23711055" target="_blank">Ouça no Tidal</a><br>
+		<i class="fa fa-deezer" style="width:30px"></i> Deezer: <a href="https://www.deezer.com/br/artist/668138" target="_blank">Ouça no Deezer</a><br>
+
 	  </div>
 	</div>
 </div>
 
+<script>
+function myFunction() {
+	  var x = document.getElementById("navDemo");
+	  if (x.className.indexOf("w3-show") == -1) {
+		x.className += " w3-show";
+	  } else {
+		x.className = x.className.replace(" w3-show", "");
+	  }
+	}
+
+
+
+
+</script>
+
+</body>
