@@ -220,7 +220,17 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 @media (max-width: 600px) {
 	.social, .video, .titulo {
 		background-attachment: scroll; /* Troque de fixed para scroll em telas menores */
+
 	}
+
+	.social i {
+		font-size: 30px;
+		width: 100%;
+		padding-right: 50px;
+	}
+
+
+
 }
 
 
@@ -234,6 +244,8 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 		padding: 0;                   /* Remove qualquer padding interno */
 		margin: 0;                    /* Remove margens externas */
 		box-sizing: border-box;       /* Garante que largura leve em conta bordas e padding */
+
+
 	}
 
 	.nav i {
@@ -278,6 +290,10 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 }
 
