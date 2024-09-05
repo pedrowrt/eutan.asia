@@ -448,3 +448,31 @@ width: 50%;
 	align-items: end;
 	text-align: right;
 }
+
+@media (max-width: 480px) {
+
+	.social, .social i, .w3-center .social {
+		display: none;
+		padding: 0px;
+		margin: 0px;
+		line-height: 0;
+
+	}
+
+	.w3-bar .w3-right {
+		padding: 0;
+		margin: 0;
+	}
+
+	.titulo {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.nav {
+		padding: 0;
+		margin: 0;
+	}
+
+
+}
