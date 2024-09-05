@@ -1,15 +1,36 @@
-* {
+#bio {
 	background-image: url('photos/bio.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-blend-mode: overlay;
-	box-sizing: border-box;
+	background-size: contain; /* Faz a imagem cobrir toda a área */
+	background-position: center; /* Centraliza a imagem */
+	background-repeat: no-repeat; /* Evita que a imagem se repita */
+	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
+	/* Adiciona um overlay translúcido */
+	background-color: rgba(0, 0, 0, 0.1); /* Preto com 50% de opacidade */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	color: #fff; /* Deixa o texto branco para garantir contraste */
+	box-sizing: border-box; /* Inclui padding e border na largura e altura */
 	display: flex;
-	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 
 }
+
+
+.titulo {
+	color: beige;
+	padding-top: 50px;
+	height: 100px;
+	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
+	position: relative; /* Necessário para posicionar o overlay */
+	background-color: rgba(0, 0, 0, 0.1); /* Preto com 50% de opacidade */
+	position:  initial; /* Necessário para posicionar o overlay */
+	/* Adiciona um overlay translúcido */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	width: 100%; /* Garante que a seção cubra 100% da largura da viewport */
+	box-sizing: border-box; /* Inclui padding e border na largura e altura */
+	display: flex;
+	align-items: center; /* Centraliza verticalmente o conteúdo */
+	justify-content: center; /* Centraliza horizontalmente o conteúdo */
+}
+
 
 /* Correções gerais */
 
@@ -17,11 +38,14 @@ html, body {
 	overflow-x: hidden;
 }
 
-body {font-family: "Lato", sans-serif
+body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
+
+
 }
 
 /* Estilo da Navbar */
 .w3-top .w3-bar {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -51,66 +75,115 @@ body {font-family: "Lato", sans-serif
 	display: none;
 }
 
-	.social, .social i, .w3-center .social {
-	display: none;
-	padding: 0px;
-	margin: 0px;
-	line-height: 0;
+
+
+#contact {
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
+	min-width: 100%;
+	box-sizing: border-box;
+	display: inherit;
+	align-items: flex-start;
+	justify-content: flex-start;
+	height: min-content;
+	position:  initial; /* Necessário para posicionar o overlay */
+	color: beige;
+	position: relative; /* Necessário para posicionar o overlay */
+	/* Adiciona um overlay translúcido */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	margin: -30px 0 0;
+	padding-left: 50px;
 }
 
-.w3-bar .w3-right {
-	padding: 0;
-	margin: 0;
+
+.fa {
+	text-align: center;
 }
 
-.nav {
-	padding: 0;
-	margin: 0;
-}
 
+/* Título com imagem de fundo */
 .titulo {
 	color: beige;
-	padding-top: 50px;
-	height: 100px;
-	position:  initial; /* Necessário para posicionar o overlay */
-	/* Adiciona um overlay translúcido */
-	width: 100%; /* Garante que a seção cubra 100% da largura da viewport */
-	align-items: center; /* Centraliza verticalmente o conteúdo */
-	justify-content: center; /* Centraliza horizontalmente o conteúdo */
-	margin: 0px;
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: fit-content;
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	padding-top: 42px;
+	padding-bottom: 10px;
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .social {
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
 	color: rgba(255, 254, 254, 0.831);
+	box-sizing: border-box;
+	display: flex;
 	flex-direction: row;
 	width: 100%;
 	padding-left: 150px;
 	padding-right: 150px;
-	padding-bottom: 50px;
 	align-items: center;
 	justify-content: space-around;
+	padding-bottom: 50px;
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
 	font-size: 2.5vh; /* Aumenta o tamanho dos ícones */
 	color: #fff;
 	transition: transform 0.3s ease-in-out;
+
 }
 .social i:hover {
 	transform: scale(1.1); /* Efeito de zoom */
 	color: rgba(212, 132, 0, 0.928);
 }
 
+
+
+.video {
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: min-content;
+	position:  initial; /* Necessário para posicionar o overlay */
+	color: beige;
+	position: relative; /* Necessário para posicionar o overlay */
+	/* Adiciona um overlay translúcido */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	padding-top: 0px;
+}
+
 /* Bio Section */
 #bio {
+	font-size: 12pt;
 	text-shadow: 1px 2px 1px rgba(8, 8, 8, 0.6), 3px 2px 2px rgba(0, 0, 0, 0.645), 1px 2px 3px rgba(0, 0, 0, 0.654);
-	background-size: contain; /* Faz a imagem cobrir toda a área */
-	/* Adiciona um overlay translúcido */
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: left;
-	text-align: left;
-	padding-bottom: 20px;
-	width: 100%;
-	font-size: 2.5vh;
 }
 
 .bio-eng {
@@ -118,7 +191,6 @@ body {font-family: "Lato", sans-serif
 	text-shadow: 1px 1px 4px rgb(0, 0, 0);
 	padding: 10px;
 	width: 45%;
-	max-width: 50%;
 
 }
 
@@ -127,92 +199,77 @@ body {font-family: "Lato", sans-serif
 	text-shadow: 1px 1px 4px rgb(0, 0, 0);
 	padding: 10px;
 	width: 49%;
-	max-width: 50%;
-
 }
 
 .w3-row {
 	margin: 0px 0px 0px 0px;
 }
 
-.video {
+
+
+/* Imagem de fundo translúcida para a bio */
+#bio {
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
+	color: #fff;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	justify-content: left;
+	text-align: left;
+	padding-bottom: 20px;
 	width: 100%;
-	align-items: center;
-	justify-content: center;
-	height: min-content;
-	position:  initial; /* Necessário para posicionar o overlay */
-	color: beige;
-	/* Adiciona um overlay translúcido */
-	padding-top: 0px;
-}
-
-#contact {
-	min-width: 100%;
-	display: inherit;
-	align-items: flex-start;
-	justify-content: flex-start;
-	height: min-content;
-	position:  initial; /* Necessário para posicionar o overlay */
-	padding: 0px 0px 0px 50px;
-	color: beige;
-	margin: -30px 0 0;
-}
-
-.fa {
-	text-align: center;
-}
-
-#contact i {
-	margin-bottom: 10%;
-}
-
-#contact a {
-	padding-left: 2%;
-	text-align: center; /* Texto justificado à direita */
-	align-items: flex-end; /* Alinhar os itens à direita */
-	text-justify: auto;
-	align-content: end;
+	font-size: 2.5vh;
 }
 
 
 
+@media (max-width: 220px) {
+	h2 {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		font-size: 14pt !important;
+		align-items: center;
+		justify-content: space-around !important;
+	}
 
 
-@media (max-width: 414px) {
+
+}
+
+
+@media (max-width: 965px) {
 
 	* {
 		background-attachment: scroll; /* Troque de fixed para scroll em telas menores */
+		background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+
+
 	}
 
+
+
 	.social, .video, .titulo {
+
 		max-width: 80%;
 		margin: auto;
 		padding: 0px 0px;
-	}
 
-	.social {
-		color: rgba(255, 254, 254, 0.831);
-		flex-direction: row;
-		font-size: 2.5vh;
-		width: 100%;
-		align-items: flex;
-		justify-content: space-between;
-		padding: 0px 0px;
-		padding-bottom: 50px;
-		flex-wrap: wrap; /* Permite a quebra dos itens para uma nova linha */
-		margin: 0;
-		max-width: 60%;
-		max-height: 10px; /* Define a altura máxima para limitar o número de linhas */
 	}
 
 	.social i {
 		width: auto;
+		box-sizing: border-box;
 		flex-wrap: wrap;
 		justify-items: center;
-		flex-basis: 22%; /* Define que cada ícone ocupe aproximadamente 22% da largura para caberem 4 por linha */
-		max-width: 22%;
-		text-align: center;
-
 	}
 
 	.social i:hover {
@@ -221,22 +278,29 @@ body {font-family: "Lato", sans-serif
 	}
 
 	.nav {
+		display: flex;               /* Utiliza flexbox para facilitar o alinhamento */
 		justify-content: flex-start;  /* Alinha o ícone à esquerda */
 		align-items: left;          /* Alinha verticalmente ao centro */
 		width: auto;                  /* Garante que o contêiner ocupe toda a largura */
 		padding: 0;                   /* Remove qualquer padding interno */
 		margin: 0;                    /* Remove margens externas */
+		box-sizing: border-box;       /* Garante que largura leve em conta bordas e padding */
+
+
 	}
 
 #bio {
 	flex-direction: inherit; /* Aplica column em dispositivos móveis */
 	max-width: 100%;
 	width: 100%;
+	box-sizing: border-box;
+	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: flex-start;
 	text-align: start;
 	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
 }
 
 .w3-content, .w3-auto, .w3-container, .w3-panel {
@@ -245,14 +309,17 @@ body {font-family: "Lato", sans-serif
 	padding-top: 5px;
 	padding-left: 5%;
 	padding-right: 0;
+
 }
 
 .nav {
+	display: flex;               /* Utiliza flexbox para facilitar o alinhamento */
 	justify-content: flex-start;  /* Alinha o ícone à esquerda */
 	align-items: center;          /* Alinha verticalmente ao centro */
 	width: 100%;                  /* Garante que o contêiner ocupe toda a largura */
 	padding: 0;                   /* Remove qualquer padding interno */
 	margin: 0;                    /* Remove margens externas */
+	box-sizing: border-box;       /* Garante que largura leve em conta bordas e padding */
 }
 
 .nav i {
@@ -268,7 +335,14 @@ body {font-family: "Lato", sans-serif
 	flex-wrap: wrap;
 	padding: 50px;
 	width: auto;
+	box-sizing: border-box;
+	display: flex;
 	flex-direction: row;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 }
 
 .w3-center.social {
@@ -282,7 +356,10 @@ body {font-family: "Lato", sans-serif
 	line-break: auto;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	box-sizing: border-box;
+	display: flex;
 	flex-direction: row;
+
 }
 
 .w3-center.social i {
@@ -291,7 +368,27 @@ body {font-family: "Lato", sans-serif
 	text-align: center;
 }
 
-
+.social {
+	background-image: url('photos/bio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: rgba(255, 254, 254, 0.831);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	font-size: 2.5vh;
+	width: 100%;
+	align-items: flex;
+	justify-content: space-between;
+	padding: 0px 0px;
+	padding-bottom: 50px;
+	flex-wrap: wrap; /* Permite a quebra dos itens para uma nova linha */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	margin: 0;
+	max-width: 60%;
+}
 
 .social i {
 	padding: 15px 0; /* Ajusta o espaçamento vertical entre os ícones em telas pequenas */
@@ -303,6 +400,8 @@ body {font-family: "Lato", sans-serif
 #music {
 	flex-direction: column;
 	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+
 }
 
 .w3-col.m3, .w3-quarter {
@@ -312,15 +411,73 @@ width: 50%;
 .video {
 	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 }
+
+
+
 }
 
-@media (max-width: 220px) {
-	h2 {
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
-		font-size: 14pt !important;
-		align-items: center;
-		justify-content: space-around !important;
+
+
+
+.bio-pt {
+	max-width: 50%;
+}
+.bio-eng {
+	max-width: 50%;
+
+}
+
+
+#contact {
+	margin: 0px;
+	padding: 0px 0px 0px 5%;
+	border: 5%;
+}
+
+#contact i {
+	margin-bottom: 10%;
+}
+
+#contact a {
+	padding-left: 2%;
+	box-sizing: border-box;
+	text-align: center; /* Texto justificado à direita */
+	align-items: flex-end; /* Alinhar os itens à direita */
+	text-justify: auto;
+	align-content: end;
+	align-items: end;
+	text-align: right;
+}
+
+@media (max-width: 480px) {
+
+	.social, .social i, .w3-center .social {
+		display: none;
+		padding: 0px;
+		margin: 0px;
+		line-height: 0;
+
 	}
+
+	.w3-bar .w3-right {
+		padding: 0;
+		margin: 0;
+	}
+
+	.titulo {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.nav {
+		padding: 0;
+		margin: 0;
+	}
+
+	#contact {
+		background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
+
+	}
+
+
 }
