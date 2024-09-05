@@ -474,5 +474,10 @@ width: 50%;
 		margin: 0;
 	}
 
+	#contact {
+		background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
+
+	}
+
 
 }
