@@ -27,7 +27,7 @@
 
 <script async src="https://www.youtube.com/iframe_api"></script>
 
-<script>
+<script async>
   // Load YouTube Iframe API script
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
@@ -101,6 +101,29 @@
 	videoAPI.stop();
   });
 </script>
+
+  <script>
+	// Check for support of passive event listeners
+	let supportsPassive = false;
+	try {
+	  const options = {
+		get passive() {
+		  supportsPassive = true;
+		  return false;
+		}
+	  };
+	  window.addEventListener("test", null, options);
+	} catch (e) {}
+
+	// Add passive touchstart and wheel listeners
+	document.addEventListener('touchstart', function(e) {
+	  console.log('Touch event detected');
+	}, supportsPassive ? { passive: true } : false);
+
+	document.addEventListener('wheel', function(e) {
+	  console.log('Wheel event detected');
+	}, supportsPassive ? { passive: true } : false);
+  </script>
 
 <!-- Pré-carregamento do CSS do W3Schools -->
 <link rel="preload" href="https://www.w3schools.com/w3css/4/w3.css" as="style" onload="this.rel='stylesheet'">
