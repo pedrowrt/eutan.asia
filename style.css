@@ -40,7 +40,9 @@ html, body {
 
 body {
 	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
-    font-family: "Lato", sans-serif
+    font-family: "Lato", sans-serif;
+	font-display: swap;
+
 }
 
 /* Estilo da Navbar */

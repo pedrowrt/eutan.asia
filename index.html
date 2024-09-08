@@ -17,13 +17,90 @@
 <meta name="twitter:description" content="Ouça agora o post-punk de Eutanásia.">
 <meta name="twitter:image" content="https://yt3.googleusercontent.com/WksCU6ulO7Q2HqGGIU2Isy4uJWd5UGJnFXf7awraNI3TvEpGbteGINb6CRQBVx7A2uvTRxIT=s160-c-k-c0x00ffffff-no-rj">
 	<!-- Favicon -->
-<link rel="icon" href="https://www.seusite.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://yt3.googleusercontent.com/WksCU6ulO7Q2HqGGIU2Isy4uJWd5UGJnFXf7awraNI3TvEpGbteGINb6CRQBVx7A2uvTRxIT=s160-c-k-c0x00ffffff-no-rj" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="https://yt3.googleusercontent.com/WksCU6ulO7Q2HqGGIU2Isy4uJWd5UGJnFXf7awraNI3TvEpGbteGINb6CRQBVx7A2uvTRxIT=s160-c-k-c0x00ffffff-no-rj">
 <link rel="icon" type="image/png" sizes="32x32" href="https://yt3.googleusercontent.com/WksCU6ulO7Q2HqGGIU2Isy4uJWd5UGJnFXf7awraNI3TvEpGbteGINb6CRQBVx7A2uvTRxIT=s160-c-k-c0x00ffffff-no-rj">
 <link rel="icon" type="image/png" sizes="16x16" href="https://yt3.googleusercontent.com/WksCU6ulO7Q2HqGGIU2Isy4uJWd5UGJnFXf7awraNI3TvEpGbteGINb6CRQBVx7A2uvTRxIT=s160-c-k-c0x00ffffff-no-rj">
 
 
 <script defer src="https://kit.fontawesome.com/b133f872bd.js" crossorigin="anonymous"></script>
+
+<script async src="https://www.youtube.com/iframe_api"></script>
+
+<script>
+  // Load YouTube Iframe API script
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+
+  // This function creates an <iframe> (and YouTube player) after the API code downloads.
+  function onYouTubeIframeAPIReady() {
+	player = new YT.Player('youtube-player', {
+	  height: '315',
+	  width: '560',
+	  videoId: 'x-UMO1gdbF0', // YouTube video ID
+	  playerVars: {
+		'autoplay': 0, // Set to 1 for autoplay
+		'controls': 1, // Show video controls
+		'rel': 0, // Disable related videos
+		'showinfo': 0, // Hide video info
+		'modestbranding': 1 // Minimal YouTube branding
+	  },
+	  events: {
+		'onReady': onPlayerReady,
+		'onStateChange': onPlayerStateChange
+	  }
+	});
+  }
+
+  // The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+	console.log('Player is ready');
+  }
+
+  // The API will call this function when the player's state changes.
+  // It can be used to detect when the video is playing, paused, etc.
+  function onPlayerStateChange(event) {
+	if (event.data == YT.PlayerState.PLAYING) {
+	  console.log('Video is playing');
+	}
+  }
+
+  // Custom API to control the video player
+  const videoAPI = {
+	play: function() {
+	  player.playVideo();
+	},
+	pause: function() {
+	  player.pauseVideo();
+	},
+	stop: function() {
+	  player.stopVideo();
+	},
+	getCurrentTime: function() {
+	  return player.getCurrentTime();
+	},
+	seekTo: function(seconds) {
+	  player.seekTo(seconds, true);
+	}
+  };
+
+  // Example of using the API to play the video
+  document.getElementById('playButton').addEventListener('click', function() {
+	videoAPI.play();
+  });
+
+  document.getElementById('pauseButton').addEventListener('click', function() {
+	videoAPI.pause();
+  });
+
+  document.getElementById('stopButton').addEventListener('click', function() {
+	videoAPI.stop();
+  });
+</script>
 
 <!-- Pré-carregamento do CSS do W3Schools -->
 <link rel="preload" href="https://www.w3schools.com/w3css/4/w3.css" as="style" onload="this.rel='stylesheet'">
@@ -86,41 +163,41 @@
 	<div class="w3-row">
 	  <div class="w3-quarter">
 		<a href="https://www.youtube.com/watch?v=x-UMO1gdbF0" target="_blank">
-		<img src="./photos/cilada.jpg" style="width:100%" onclick="onClick(this)" alt="Cilada"></a>
+		<img src="./photos/cilada.webp" style="width:100%" onclick="onClick(this)" alt="Cilada"></a>
 		<a href="https://www.youtube.com/watch?v=u4LlA3DechI" target="_blank">
-		<img src="./photos/moet.jpg" style="width:100%" onclick="onClick(this)" alt="Meus Olhos eu Tapo feat. DiU">
+		<img src="./photos/moet.webp" style="width:100%" onclick="onClick(this)" alt="Meus Olhos eu Tapo feat. DiU">
 		</a>
 	  </div>
 
 	  <div class="w3-quarter">
 
 		<a href="https://www.youtube.com/watch?v=oLupLMSdX94" target="_blank">
-		<img src="./photos/teter.jpg" style="width:100%" onclick="onClick(this)" alt="TE TER"></a>
+		<img src="./photos/teter.webp" style="width:100%" onclick="onClick(this)" alt="TE TER"></a>
 
 		<a href="https://www.youtube.com/watch?v=ZZNryRkuPEw" target="_blank">
-		<img src="./photos/fdm.jpg" style="width:100%" onclick="onClick(this)" alt="Filho do Medo"></a>
+		<img src="./photos/fdm.webp" style="width:100%" onclick="onClick(this)" alt="Filho do Medo"></a>
 
 	  </div>
 
 	  <div class="w3-quarter">
 
 		<a href="https://www.youtube.com/watch?v=5I6Mmp7L87A" target="_blank">
-			<img src="./photos/outside.jpg" style="width:100%" onclick="onClick(this)" alt="Outside feat. Snowfuks">
+			<img src="./photos/outside.webp" style="width:100%" onclick="onClick(this)" alt="Outside feat. Snowfuks">
 		</a>
 
 		<a href="https://www.youtube.com/watch?v=j8XRFQ-WrdM" target="_blank">
-			<img src="./photos/citadel.png" style="width:100%" onclick="onClick(this)" alt="Citadel w/ Two Internet Ghosts">
+			<img src="./photos/citadel.webp" style="width:100%" onclick="onClick(this)" alt="Citadel w/ Two Internet Ghosts">
 		</a>
 	  </div>
 
 	  <div class="w3-quarter">
 
 		<a href="https://www.youtube.com/watch?v=1ILjV4E8jjg" target="_blank">
-			<img src="./photos/tantofaz.jpg" style="width:100%" onclick="onClick(this)" alt="Tanto Faz">
+			<img src="./photos/tantofaz.webp" style="width:100%" onclick="onClick(this)" alt="Tanto Faz">
 		</a>
 
 		<a href="https://www.youtube.com/watch?v=IoCEPvhQAiw" target="_blank">
-			<img src="./photos/muitos.png" style="width:100%" onclick="onClick(this)" alt="Muitos w/ maisnerd">
+			<img src="./photos/muitos.webp" style="width:100%" onclick="onClick(this)" alt="Muitos w/ maisnerd">
 		</a>
 	  </div>
 	</div>
@@ -145,7 +222,7 @@
 <!-- Video -->
 
 <div class="w3-center video" style="max-width:100%">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/x-UMO1gdbF0?si=uB8T_CWf885EwXYX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div id="youtube-player"></div> <!-- This will hold the YouTube iframe -->
 </div>
 
 
