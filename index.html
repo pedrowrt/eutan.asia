@@ -112,7 +112,7 @@
 		  return false;
 		}
 	  };
-	  window.addEventListener("test", null, options);
+	  window.addEventListener("test", () => {}, options);
 	} catch (e) {}
 
 	// Add passive touchstart and wheel listeners
