@@ -494,6 +494,7 @@ width: 50%;
 
 	#contact {
 		background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
+		background-blend-mode: overlay; /* Mistura a imagem com o overlay */
 
 	}
 
