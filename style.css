@@ -1,5 +1,5 @@
 #bio {
-	background-image: url('photos/bio.png');
+	background-image: url('photos/bio.webp');
 	background-size: contain; /* Faz a imagem cobrir toda a área */
 	background-position: center; /* Centraliza a imagem */
 	background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -111,7 +111,7 @@ body {
 /* Título com imagem de fundo */
 .titulo {
 	color: beige;
-	background-image: url('photos/bio.png');
+	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -125,7 +125,7 @@ body {
 	margin-top: 40px;
 	padding-top: 42px;
 	padding-bottom: 10px;
-	background-image: url('photos/bio.png');
+	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body {
 }
 
 .social {
-	background-image: url('photos/bio.png');
+	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -163,7 +163,7 @@ body {
 
 
 .video {
-	background-image: url('photos/bio.png');
+	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -214,7 +214,7 @@ body {
 
 /* Imagem de fundo translúcida para a bio */
 #bio {
-	background-image: url('photos/bio.png');
+	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -380,7 +380,7 @@ body {
 }
 
 .social {
-	background-image: url('photos/bio.png');
+	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
