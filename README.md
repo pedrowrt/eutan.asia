@@ -15,7 +15,6 @@ The website was designed to be responsive, ensuring that the content is properly
 - **index.html**: The main HTML file that structures the site’s content.
 - **style.css**: The CSS file responsible for the site’s design and layout, including responsiveness and animations.
 - **/photos/**: Directory containing images used on the site, such as band photos and background images.
-- **/fonts/**: Directory containing custom fonts used on the site.
 
 ```
 
@@ -166,7 +165,6 @@ O site foi desenvolvido para ser responsivo, garantindo que o conteúdo seja exi
 - **index.html**: O arquivo HTML principal que estrutura o conteúdo do site.
 - **style.css**: O arquivo CSS responsável pelo design e layout do site, incluindo responsividade e animações.
 - **/photos/**: Diretório contendo imagens usadas no site, como fotos da banda e imagens de fundo.
-- **/fonts/**: Diretório contendo as fontes personalizadas utilizadas no site.
 
 ## 📱 **Responsividade**
 
