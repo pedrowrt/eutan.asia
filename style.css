@@ -38,9 +38,9 @@ html, body {
 	overflow-x: hidden;
 }
 
-body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
-
-
+body {
+	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
+    font-family: "Lato", sans-serif
 }
 
 /* Estilo da Navbar */
@@ -182,8 +182,10 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 
 /* Bio Section */
 #bio {
+
 	font-size: 12pt;
 	text-shadow: 1px 2px 1px rgba(8, 8, 8, 0.6), 3px 2px 2px rgba(0, 0, 0, 0.645), 1px 2px 3px rgba(0, 0, 0, 0.654);
+	text-wrap: balance;
 }
 
 .bio-eng {
@@ -214,7 +216,7 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
+	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 	color: #fff;
 	box-sizing: border-box;
 	display: flex;
@@ -239,9 +241,12 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 		font-size: 14pt !important;
 		align-items: center;
 		justify-content: space-around !important;
+
 	}
 
-
+	#bio {
+		text-wrap: balance;
+	}
 
 }
 
@@ -251,6 +256,7 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 	* {
 		background-attachment: scroll; /* Troque de fixed para scroll em telas menores */
 		background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+		background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 
 
 	}
@@ -301,6 +307,8 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 	text-align: start;
 	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	text-wrap: balance;
+
 }
 
 .w3-content, .w3-auto, .w3-container, .w3-panel {
@@ -375,6 +383,8 @@ body {background-color: rgba(62, 63, 63, 1); font-family: "Lato", sans-serif
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	color: rgba(255, 254, 254, 0.831);
+	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
+
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
@@ -432,6 +442,8 @@ width: 50%;
 	margin: 0px;
 	padding: 0px 0px 0px 5%;
 	border: 5%;
+	text-wrap: balance;
+
 }
 
 #contact i {
@@ -450,6 +462,12 @@ width: 50%;
 }
 
 @media (max-width: 480px) {
+
+	body {
+		background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
+		background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+
+	}
 
 	.social, .social i, .w3-center .social {
 		display: none;
@@ -479,5 +497,10 @@ width: 50%;
 
 	}
 
+
+}
+
+p {
+	text-wrap: balance;
 
 }
