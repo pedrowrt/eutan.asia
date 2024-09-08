@@ -16,7 +16,7 @@ The website was designed to be responsive, ensuring that the content is properly
 - **style.css**: The CSS file responsible for the site’s design and layout, including responsiveness and animations.
 - **/photos/**: Directory containing images used on the site, such as band photos and background images.
 
-```
+
 
 ## 📱 **Responsiveness**
 
