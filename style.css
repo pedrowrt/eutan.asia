@@ -430,7 +430,12 @@ body {
 	transition: transform 0.3s ease-in-out;
 }
 #agenda {
-	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: rgba(255, 254, 254, 0.831);
+	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 }
 #music {
 	flex-direction: column;
