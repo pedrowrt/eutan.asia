@@ -15,8 +15,11 @@
 
 
 #agenda {
-	
-margin-top: 250px;
+
+	background: none;
+	background-image: url('photos/bio.webp');
+	background-color: rgba(37, 37, 37, 0.116);	
+	margin-top: 250px;
 }
 .titulo {
 	color: beige;
@@ -519,3 +522,4 @@ p {
 	text-wrap: balance;
 
 }
+
