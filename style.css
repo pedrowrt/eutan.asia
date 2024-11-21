@@ -20,6 +20,17 @@
 	background-image: url('photos/bio.webp');
 	background-color: rgba(37, 37, 37, 0.116);	
 	margin-top: 250px;
+	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
+	position: relative; /* Necessário para posicionar o overlay */
+	background-color: rgba(0, 0, 0, 0.1); /* Preto com 50% de opacidade */
+	position:  initial; /* Necessário para posicionar o overlay */
+	/* Adiciona um overlay translúcido */
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	width: 100%; /* Garante que a seção cubra 100% da largura da viewport */
+	box-sizing: border-box; /* Inclui padding e border na largura e altura */
+	display: flex;
+	align-items: center; /* Centraliza verticalmente o conteúdo */
+	justify-content: center; /* Centraliza horizontalmente o conteúdo */
 }
 .titulo {
 	color: beige;
