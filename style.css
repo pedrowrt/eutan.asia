@@ -1,5 +1,5 @@
 #bio {
-	background-image: url('photos/bio.webp');
+	/* background-image: url('photos/bio.webp'); 
 	background-size: contain; /* Faz a imagem cobrir toda a área */
 	background-position: center; /* Centraliza a imagem */
 	background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -14,6 +14,13 @@
 }
 
 
+#agenda {
+
+	background: none;
+	background-image: url('photos/bio.webp');
+	background-color: rgba(37, 37, 37, 0.116);	
+	margin-top: 250px;
+}
 .titulo {
 	color: beige;
 	padding-top: 50px;
@@ -40,7 +47,7 @@ html, body {
 
 body {
 	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
-    font-family: "Lato", sans-serif;
+	font-family: "Lato", sans-serif;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-display: swap;
 
@@ -81,7 +88,7 @@ body {
 
 
 #contact {
-	background-image: url('photos/bio.webp');
+	/*background-image: url('photos/bio.webp'); */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -111,7 +118,7 @@ body {
 /* Título com imagem de fundo */
 .titulo {
 	color: beige;
-	background-image: url('photos/bio.webp');
+	/*background-image: url('photos/bio.webp'); */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -125,7 +132,6 @@ body {
 	margin-top: 40px;
 	padding-top: 42px;
 	padding-bottom: 10px;
-	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -133,7 +139,7 @@ body {
 }
 
 .social {
-	background-image: url('photos/bio.webp');
+	/*background-image: url('photos/bio.webp'); */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -232,7 +238,10 @@ body {
 	font-size: 2.5vh;
 }
 
-
+#agenda {
+	
+margin-top: 250px;
+}
 
 @media (max-width: 220px) {
 	h2 {
@@ -263,7 +272,10 @@ body {
 
 
 	}
-
+	
+	.social {
+		max-height: 40px;
+	}
 
 
 	.social, .video, .titulo {
@@ -380,7 +392,7 @@ body {
 }
 
 .social {
-	background-image: url('photos/bio.webp');
+	/*background-image: url('photos/bio.webp'); */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -409,7 +421,10 @@ body {
 	color: #fff;
 	transition: transform 0.3s ease-in-out;
 }
-
+#agenda {
+	
+margin-top: 250px;
+}
 #music {
 	flex-direction: column;
 	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
@@ -507,3 +522,4 @@ p {
 	text-wrap: balance;
 
 }
+
