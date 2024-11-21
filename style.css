@@ -17,7 +17,6 @@
 #agenda {
 
 	background-color: rgba(37, 37, 37, 0.116);	
-	margin-top: 250px;
 	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
 	position: relative; /* Necessário para posicionar o overlay */
 	background-color: rgba(0, 0, 0, 0.8); /* Preto com 50% de opacidade */
@@ -250,7 +249,6 @@ body {
 #agenda {
 
 	background-color: rgba(37, 37, 37, 0.116);	
-	margin-top: 250px;
 	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
 	position: relative; /* Necessário para posicionar o overlay */
 	background-color: rgba(0, 0, 0, 0.8); /* Preto com 50% de opacidade */
@@ -445,7 +443,6 @@ body {
 #agenda {
 
 	background-color: rgba(37, 37, 37, 0.116);	
-	margin-top: 250px;
 	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
 	position: relative; /* Necessário para posicionar o overlay */
 	background-color: rgba(0, 0, 0, 0.8); /* Preto com 50% de opacidade */
@@ -559,7 +556,6 @@ p {
 #agenda {
 
 	background-color: rgba(37, 37, 37, 0.116);	
-	margin-top: 250px;
 	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
 	position: relative; /* Necessário para posicionar o overlay */
 	background-color: rgba(0, 0, 0, 0.8); /* Preto com 50% de opacidade */
