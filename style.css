@@ -32,8 +32,8 @@
 }
 .titulo {
 	color: beige;
-	padding-top: 50px;
-	height: 100px;
+	padding-top: 0px;
+	height: 00px;
 	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
 	position: relative; /* Necessário para posicionar o overlay */
 	background-color: rgba(0, 0, 0, 0.1); /* Preto com 50% de opacidade */
@@ -138,9 +138,9 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 40px;
-	padding-top: 42px;
-	padding-bottom: 10px;
+	margin-top: 0px;
+	padding-top: 2px;
+	padding-bottom: 0px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -364,7 +364,7 @@ body {
 
 .titulo {
 	flex-wrap: wrap;
-	padding: 50px;
+	padding: 0px;
 	width: auto;
 	box-sizing: border-box;
 	display: flex;
