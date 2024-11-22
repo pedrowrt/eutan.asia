@@ -139,8 +139,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-top: 0px;
-	padding-top: 12px;
-	padding-bottom: 0px;
+	padding-top: 50px;
+	padding-bottom: 25px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -364,7 +364,7 @@ body {
 
 .titulo {
 	flex-wrap: wrap;
-	margin-top: 10px;
+	margin-top: 20px;
 	padding: 0px;
 	width: auto;
 	box-sizing: border-box;
@@ -454,7 +454,6 @@ width: 50%;
 }
 
 
-
 }
 
 
@@ -537,3 +536,30 @@ p {
 
 }
 
+.agenda {
+	margin-left: 5%;
+	margin-right: 5%;
+	max-width: 90%;
+}
+
+
+@media (min-width: 970px ) {
+	.presave {
+		height: 1200px;
+	}
+
+}
+
+@media (min-width: 1300px ) {
+	.presave {
+		height: 1400px;
+	}
+
+}
+
+@media (min-width: 1700px ) {
+	.presave {
+		height: 1600px;
+	}
+
+}
