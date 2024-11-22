@@ -32,7 +32,7 @@
 }
 .titulo {
 	color: beige;
-	padding-top: 0px;
+	padding-top: 20px;
 	height: 00px;
 	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
 	position: relative; /* Necessário para posicionar o overlay */
@@ -139,7 +139,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-top: 0px;
-	padding-top: 2px;
+	padding-top: 12px;
 	padding-bottom: 0px;
 	background-size: cover;
 	background-position: center;
@@ -364,6 +364,7 @@ body {
 
 .titulo {
 	flex-wrap: wrap;
+	margin-top: 10px;
 	padding: 0px;
 	width: auto;
 	box-sizing: border-box;
@@ -514,6 +515,7 @@ width: 50%;
 
 	.titulo {
 		margin: 0px;
+		margin-top: 50px;
 		padding: 0px;
 	}
 
