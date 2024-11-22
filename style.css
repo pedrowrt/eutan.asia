@@ -498,6 +498,10 @@ width: 50%;
 		background-blend-mode: overlay; /* Mistura a imagem com o overlay */
 
 	}
+	
+	.presave {
+		height: 600px;
+	}
 
 	.social, .social i, .w3-center .social {
 		display: none;
@@ -542,24 +546,49 @@ p {
 	max-width: 90%;
 }
 
+@media (min-width: 500px ) {
+.presave {
+	height: 700px;
+}
 
-@media (min-width: 970px ) {
+
+
+@media (min-width: 720px ) {
+	.presave {
+		height: 900px;
+	}
+
+}
+
+@media (min-width: 1000px ) {
+	.presave {
+		height: 1000px;
+	}
+
+@media (min-width: 1100px ) {
 	.presave {
 		height: 1200px;
 	}
 
 }
 
-@media (min-width: 1300px ) {
+@media (min-width: 1500px ) {
 	.presave {
 		height: 1400px;
 	}
 
 }
 
-@media (min-width: 1700px ) {
+@media (min-width: 1900px ) {
 	.presave {
 		height: 1600px;
+	}
+
+}
+
+@media (min-width: 2200px ) {
+	.presave {
+		height: 1850px;
 	}
 
 }
