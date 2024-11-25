@@ -613,7 +613,11 @@ width: 50%;
   width: 100%; /* Full-width */
   background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
+<<<<<<< HEAD
   margin-top: 40px;
+=======
+  padding-top: 40px;
+>>>>>>> album
 }
 
 .icon-bar a {
