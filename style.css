@@ -480,6 +480,7 @@ body {
 .titulo {
 	flex-wrap: wrap;
 	padding: 50px;
+	padding-bottom: 00px;
 	width: auto;
 	box-sizing: border-box;
 	display: flex;
@@ -612,6 +613,7 @@ width: 50%;
   width: 100%; /* Full-width */
   background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
+  padding-top: 40px;
 }
 
 .icon-bar a {
@@ -834,7 +836,7 @@ p {
 		.icon-bar a {
 		  float: left; /* Float links side by side */
 		  text-align: center; /* Center-align text */
-		  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+		  width: 14,28%; /* Equal width (5 icons with 20% width each = 100%) */
 		  padding: 12px 0; /* Some top and bottom padding */
 		  transition: all 0.3s ease; /* Add transition for hover effects */
 		  color: white; /* White text color */
