@@ -13,21 +13,62 @@
 
 }
 
-
-#agenda {
-
-	background: none;
-	background-image: url('photos/bio.webp');
-	background-color: rgba(37, 37, 37, 0.116);	
-	margin-top: 250px;
+html {
+  scroll-behavior: smooth;
 }
+
+#newalbum {
+	position: relative;
+	font-size: 1.5vh;	
+
+}
+
+/* Bottom right text */
+.text-block {
+	
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(77, 77, 77, 0.607);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  overflow: auto; /* Overflow due to float */
+  background-color: #000; /* Add a hover color */
+
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+  background-color: #000; /* Add a hover color */
+
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #04AA6D; /* Add an active/current color */
+}
+
 .titulo {
 	color: beige;
 	padding-top: 50px;
 	height: 100px;
 	background-attachment: fixed; /* Faz a imagem se fixar na tela ao rolar */
 	position: relative; /* Necessário para posicionar o overlay */
-	background-color: rgba(0, 0, 0, 0.1); /* Preto com 50% de opacidade */
+	background-color: rgba(0, 0, 0, 1); /* Preto com 50% de opacidade */
 	position:  initial; /* Necessário para posicionar o overlay */
 	/* Adiciona um overlay translúcido */
 	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
@@ -39,6 +80,17 @@
 }
 
 
+#music {
+	flex-direction: column;
+	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	background-color: #000; /* Add a hover color */
+
+}
+
+#agenda {
+	background-color: black;
+}
+
 /* Correções gerais */
 
 html, body {
@@ -46,7 +98,6 @@ html, body {
 }
 
 body {
-	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 	font-family: "Lato", sans-serif;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-display: swap;
@@ -58,6 +109,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #000; /* Add a hover color */
+
 }
 
 .w3-bar .w3-bar-item {
@@ -124,12 +177,11 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: fit-content;
-	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */	width: 100%;
+	background-color: rgba(0, 0, 0, 1); /* Overlay preto com 50% de opacidade */	width: 100%;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 40px;
 	padding-top: 42px;
 	padding-bottom: 10px;
 	background-size: cover;
@@ -169,7 +221,6 @@ body {
 
 
 .video {
-	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -220,7 +271,6 @@ body {
 
 /* Imagem de fundo translúcida para a bio */
 #bio {
-	background-image: url('photos/bio.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -238,10 +288,7 @@ body {
 	font-size: 2.5vh;
 }
 
-#agenda {
-	
-margin-top: 250px;
-}
+
 
 @media (max-width: 220px) {
 	h2 {
@@ -259,19 +306,95 @@ margin-top: 250px;
 	#bio {
 		text-wrap: balance;
 	}
+	
+	
+	#newalbum {
+		position: relative;
+		font-size: 1.5vh;	
+	
+	}
+	
+	/* Bottom right text */
+	.text-block {
+		
+	  position: absolute;
+	  top: 20px;
+	  right: 20px;
+	  background-color: rgba(77, 77, 77, 0.607);
+	  color: white;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+	
+	.icon-bar {
+	  width: 100%; /* Full-width */
+	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
+	  overflow: auto; /* Overflow due to float */
+	}
+	
+	.icon-bar a {
+	  float: left; /* Float links side by side */
+	  text-align: center; /* Center-align text */
+	  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+	  padding: 12px 0; /* Some top and bottom padding */
+	  transition: all 0.3s ease; /* Add transition for hover effects */
+	  color: white; /* White text color */
+	  font-size: 36px; /* Increased font size */
+	}
+	
+	.icon-bar a:hover {
+	  background-color: #000; /* Add a hover color */
+	}
+
+
 
 }
 
 
 @media (max-width: 965px) {
-
-	* {
-		background-attachment: scroll; /* Troque de fixed para scroll em telas menores */
-		background-blend-mode: overlay; /* Mistura a imagem com o overlay */
-		background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
-
-
+	
+	
+	#newalbum {
+		position: relative;
+		font-size: 1.5vh;	
+		background-color: rgba(77, 77, 77, 0.336);
 	}
+	
+	/* Bottom right text */
+	.text-block {
+		
+	  position: absolute;
+	  top: 20px;
+	  right: 20px;
+	  background-color: rgba(77, 77, 77, 0.336);
+	  color: white;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+	
+	
+	
+	.icon-bar {
+	  width: 100%; /* Full-width */
+	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
+	  overflow: auto; /* Overflow due to float */
+	}
+	
+	.icon-bar a {
+	  float: left; /* Float links side by side */
+	  text-align: center; /* Center-align text */
+	  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+	  padding: 12px 0; /* Some top and bottom padding */
+	  transition: all 0.3s ease; /* Add transition for hover effects */
+	  color: white; /* White text color */
+	  font-size: 36px; /* Increased font size */
+	}
+	
+	.icon-bar a:hover {
+	  background-color: rgba(0, 0, 0, 0.368); /* Add a hover color */
+	}
+
+	
 	
 	.social {
 		max-height: 40px;
@@ -421,14 +544,11 @@ margin-top: 250px;
 	color: #fff;
 	transition: transform 0.3s ease-in-out;
 }
-#agenda {
-	
-margin-top: 250px;
-}
+
 #music {
 	flex-direction: column;
-	background-color: rgba(0, 0, 0, 0.6); /* Overlay preto com 50% de opacidade */
 	background-blend-mode: overlay; /* Mistura a imagem com o overlay */
+	background-color: #000; /* Add a hover color */
 
 }
 
@@ -439,6 +559,7 @@ width: 50%;
 .video {
 	background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 }
+
 
 
 
@@ -468,6 +589,46 @@ width: 50%;
 	margin-bottom: 10%;
 }
 
+
+#newalbum {
+	position: relative;
+	font-size: 1.5vh;	
+
+}
+
+/* Bottom right text */
+.text-block {
+	
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(77, 77, 77, 0.607);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+
 #contact a {
 	padding-left: 2%;
 	box-sizing: border-box;
@@ -482,7 +643,6 @@ width: 50%;
 @media (max-width: 480px) {
 
 	body {
-		background-color: rgba(0, 0, 0, 0.8); /* Overlay preto com 50% de opacidade */
 		background-blend-mode: overlay; /* Mistura a imagem com o overlay */
 
 	}
@@ -516,10 +676,222 @@ width: 50%;
 
 	}
 
+	
+	#newalbum {
+		position: relative;
+		font-size: 1.3vh;	
+	
+	}
+	
+	/* Bottom right text */
+	.text-block {
+		
+	  position: absolute;
+	  top: 20px;
+	  right: 20px;
+	  background-color: rgba(77, 77, 77, 0.607);
+	  color: white;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	}
+	
+	.icon-bar {
+	  width: 100%; /* Full-width */
+	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
+	  overflow: auto; /* Overflow due to float */
+	}
+	
+	.icon-bar a {
+	  float: left; /* Float links side by side */
+	  text-align: center; /* Center-align text */
+	  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+	  padding: 12px 0; /* Some top and bottom padding */
+	  transition: all 0.3s ease; /* Add transition for hover effects */
+	  color: white; /* White text color */
+	  font-size: 36px; /* Increased font size */
+	  background-color: rgba(0, 0, 0, 0); /* Add a hover color */
+
+	}
+	
+	.icon-bar a:hover {
+	  background-color: rgba(0, 0, 0, 0.549); /* Add a hover color */
+	}
+
+
+
 }
 
 p {
 	text-wrap: balance;
 
+
 }
 
+	
+.album-img {
+  /* The image used */
+  background-image: url("./photos/album.webp");
+ 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.mediabar {
+  position: absolute;
+  margin: 10px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(29, 29, 29, 0.597);
+  columns: inherit;
+}
+
+/* Navbar links */
+.topnav a {
+  float: inline-start;
+  color: #f2f2f2;
+  text-align: match-parent;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(230, 227, 227, 1);
+}
+
+
+@media (min-width: 480px;) {
+	
+		#newalbum {
+			position: relative;
+			font-size: 1.3vh;	
+		
+		}
+		
+		/* Bottom right text */
+		.text-block {
+			
+		  position: absolute;
+		  top: 20px;
+		  right: 20px;
+		  background-color: rgba(77, 77, 77, 0.607);
+		  color: white;
+		  padding-left: 10px;
+		  padding-right: 10px;
+		}
+	
+	
+		
+		
+		/* Position the navbar container inside the image */
+		.container {
+		  position: absolute;
+		  margin: 20px;
+		  width: 135px;
+		}
+		
+		/* The navbar */
+		.topnav {
+		  overflow: hidden;
+		  background-color: rgba(117, 117, 117, 0.443);
+		}
+		
+		/* Navbar links */
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		
+		
+		.icon-bar {
+		  width: 100%; /* Full-width */
+		  overflow: auto; /* Overflow due to float */
+		  background-color: black;
+		}
+		
+		.icon-bar a {
+		  float: left; /* Float links side by side */
+		  text-align: center; /* Center-align text */
+		  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+		  padding: 12px 0; /* Some top and bottom padding */
+		  transition: all 0.3s ease; /* Add transition for hover effects */
+		  color: white; /* White text color */
+		  font-size: 36px; /* Increased font size */
+		  background-color: black;
+		}
+		
+		.icon-bar a:hover {
+		}
+
+}
+
+
+
+@media (max-width: 491px;) {
+	
+	#newalbum {
+		position: relative;
+		font-size: 1.3vh;	
+	
+		}
+		
+		/* Bottom right text */
+		.text-block {
+			
+	  	position: absolute;
+	  	top: 10px;
+	  	right: 10px;
+	  	background-color: rgba(77, 77, 77, 0.607);
+	  	color: white;
+	  	padding-left: 10px;
+	  	padding-right: 10px;
+		}
+		
+			
+		.icon-bar a {
+			float: left;
+			text-align: center;
+			width: 20%;
+			padding: 12px 0;
+			transition: all 0.3s ease;
+			color: white;
+			font-size: 16px;
+		}
+	
+	
+}
+
+@media (min-width: 491px;) {
+	
+	.icon-bar a {
+		float: left;
+		text-align: center;
+		width: 20%;
+		padding: 12px 0;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 16px;
+	}
+}
