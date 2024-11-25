@@ -697,7 +697,7 @@ width: 50%;
 	
 	.icon-bar {
 	  width: 100%; /* Full-width */
-	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
+	  background-color: rgba(0, 0, 0, 1); 
 	  overflow: auto; /* Overflow due to float */
 	}
 	
