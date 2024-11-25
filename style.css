@@ -17,6 +17,15 @@ html {
   scroll-behavior: smooth;
 }
 
+h3, h4 {
+	font-size: 2.7vw;
+}
+
+h3 {
+	line-height: 1.1;
+
+}
+
 #newalbum {
 	position: relative;
 	font-size: 1.5vh;	
@@ -28,7 +37,7 @@ html {
 	
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 10px;
   background-color: rgba(77, 77, 77, 0.607);
   color: white;
   padding-left: 20px;
@@ -39,7 +48,7 @@ html {
   width: 100%; /* Full-width */
   overflow: auto; /* Overflow due to float */
   background-color: #000; /* Add a hover color */
-  padding-top: 50px;
+		  padding-top: 40px;
 
 }
 
@@ -320,7 +329,7 @@ body {
 		
 	  position: absolute;
 	  top: 20px;
-	  right: 20px;
+	  right: 10px;
 	  background-color: rgba(77, 77, 77, 0.607);
 	  color: white;
 	  padding-left: 20px;
@@ -331,7 +340,7 @@ body {
 	  width: 100%; /* Full-width */
 	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
 	  overflow: auto; /* Overflow due to float */
-	  padding-top: 50px;
+		  padding-top: 40px;
 	}
 	
 	.icon-bar a {
@@ -367,7 +376,7 @@ body {
 		
 	  position: absolute;
 	  top: 20px;
-	  right: 20px;
+	  right: 10px;
 	  background-color: rgba(77, 77, 77, 0.336);
 	  color: white;
 	  padding-left: 20px;
@@ -380,6 +389,7 @@ body {
 	  width: 100%; /* Full-width */
 	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
 	  overflow: auto; /* Overflow due to float */
+		  padding-top: 40px;
 	}
 	
 	.icon-bar a {
@@ -692,7 +702,7 @@ width: 50%;
 		
 	  position: absolute;
 	  top: 20px;
-	  right: 20px;
+	  right: 10px;
 	  background-color: rgba(77, 77, 77, 0.607);
 	  color: white;
 	  padding-left: 10px;
@@ -703,7 +713,7 @@ width: 50%;
 	  width: 100%; /* Full-width */
 	  background-color: rgba(0, 0, 0, 1); 
 	  overflow: auto; /* Overflow due to float */
-	  padding-top: 50px;
+	  padding-top: 40px;
 	}
 	
 	.icon-bar a {
@@ -790,7 +800,7 @@ p {
 			
 		  position: absolute;
 		  top: 20px;
-		  right: 20px;
+		  right: 10px;
 		  background-color: rgba(77, 77, 77, 0.607);
 		  color: white;
 		  padding-left: 10px;
@@ -834,7 +844,7 @@ p {
 		  width: 100%; /* Full-width */
 		  overflow: auto; /* Overflow due to float */
 		  background-color: black;
-		  padding-top: 50px;
+		  padding-top: 40px;
 		}
 		
 		.icon-bar a {
@@ -849,6 +859,10 @@ p {
 		}
 		
 		.icon-bar a:hover {
+		}
+		
+		h4 {
+			font-size: 1.5vh;
 		}
 
 }
@@ -886,7 +900,9 @@ p {
 			font-size: 16px;
 		}
 	
-	
+	h4 {
+		font-size: 1.5vh;
+	}
 }
 
 @media (min-width: 491px;) {
@@ -899,6 +915,10 @@ p {
 		transition: all 0.3s ease;
 		color: white;
 		font-size: 16px;
+	}
+	
+	h4 {
+		font-size: 1.5vh;
 	}
 }
 
