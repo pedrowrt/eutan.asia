@@ -39,6 +39,7 @@ html {
   width: 100%; /* Full-width */
   overflow: auto; /* Overflow due to float */
   background-color: #000; /* Add a hover color */
+  padding-top: 50px;
 
 }
 
@@ -330,6 +331,7 @@ body {
 	  width: 100%; /* Full-width */
 	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
 	  overflow: auto; /* Overflow due to float */
+	  padding-top: 50px;
 	}
 	
 	.icon-bar a {
@@ -613,11 +615,7 @@ width: 50%;
   width: 100%; /* Full-width */
   background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
-<<<<<<< HEAD
-  margin-top: 40px;
-=======
   padding-top: 40px;
->>>>>>> album
 }
 
 .icon-bar a {
@@ -705,6 +703,7 @@ width: 50%;
 	  width: 100%; /* Full-width */
 	  background-color: rgba(0, 0, 0, 1); 
 	  overflow: auto; /* Overflow due to float */
+	  padding-top: 50px;
 	}
 	
 	.icon-bar a {
@@ -835,6 +834,7 @@ p {
 		  width: 100%; /* Full-width */
 		  overflow: auto; /* Overflow due to float */
 		  background-color: black;
+		  padding-top: 50px;
 		}
 		
 		.icon-bar a {
