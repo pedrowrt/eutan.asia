@@ -341,7 +341,7 @@ body {
 
 	.icon-bar {
 	  width: 100%; /* Full-width */
-	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
+	  background-color: rgba(0, 0, 0, 1); /* Dark-grey background */
 	  overflow: auto; /* Overflow due to float */
 		  padding-top: 40px;
 	}
@@ -390,7 +390,7 @@ body {
 
 	.icon-bar {
 	  width: 100%; /* Full-width */
-	  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
+	  background-color: black; /* Dark-grey background */
 	  overflow: auto; /* Overflow due to float */
 		  padding-top: 40px;
 	}
@@ -624,7 +624,7 @@ width: 50%;
 
 .icon-bar {
   width: 100%; /* Full-width */
-  background-color: rgba(85, 85, 85, 0); /* Dark-grey background */
+  background-color: black; /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
   padding-top: 80px;
 }
@@ -773,14 +773,15 @@ p {
 }
 
 /* Navbar links */
-.topnav a {
+.topnav a, h1 {
   float: inline-start;
   color: #f2f2f2;
   text-align: match-parent;
-  padding: 14px 18px;
+  padding:  ;
   text-decoration: none;
   font-size: 18px;
 }
+
 
 .topnav a:hover {
   background-color: rgba(0, 0, 0, 1);
