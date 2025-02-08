@@ -38,6 +38,10 @@ h3 {
 
 }
 
+.breakdown {
+	margin-top: 80px;
+}
+
 /* Bottom right text */
 .text-block {
 
@@ -103,9 +107,17 @@ h3 {
 
 }
 
+#music>h2 {
+	display: none;
+}
+
 #agenda {
 	background-color: black;
 	margin-bottom: 30px;
+}
+
+#bio>h2 {
+	display: none;
 }
 
 /* Correções gerais */
@@ -156,7 +168,9 @@ body {
 	display: none;
 }
 
-
+#contact>h2 {
+	display: none;
+}
 
 #contact {
 	/*background-image: url('photos/bio.webp'); */
