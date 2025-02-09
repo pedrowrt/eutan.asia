@@ -351,7 +351,7 @@ body {
 
 	  position: absolute;
 	  top: 20px;
-	  right: 220px;
+	  right: 5px;
 	  background-color: rgba(77, 77, 77, 0.607);
 	  color: white;
 	  padding-left: 20px;
@@ -398,7 +398,7 @@ body {
 
 	  position: absolute;
 	  top: 20px;
-	  right: 220px;
+	  right: 20px;
 	  background-color: rgba(77, 77, 77, 0.336);
 	  color: white;
 	  padding-left: 20px;
@@ -634,7 +634,7 @@ width: 50%;
 
   position: absolute;
   top: 20px;
-  right: 220px;
+  right: 320px;
   background-color: rgba(77, 77, 77, 0.607);
   color: white;
   padding-left: 20px;
@@ -722,7 +722,7 @@ width: 50%;
 
 	  position: absolute;
 	  top: 20px;
-	  right: 220px;
+	  right: 20px;
 	  background-color: rgba(77, 77, 77, 0.607);
 	  color: white;
 	  padding-left: 10px;
@@ -821,7 +821,7 @@ p {
 
 		  position: absolute;
 		  top: 20px;
-		  right: 220px;
+		  right: 10px;
 		  background-color: rgba(77, 77, 77, 0.607);
 		  color: white;
 		  padding-left: 10px;
@@ -903,7 +903,7 @@ p {
 
 	  	position: absolute;
 	  	top: 10px;
-	  	right: 220px;
+	  	right: 10px;
 	  	background-color: rgba(77, 77, 77, 0.607);
 	  	color: white;
 	  	padding-left: 10px;
